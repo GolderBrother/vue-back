@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "pm2 ./server.js --name vue-back --watch",
+    "start": "pm2 start ./server.js --name vue-back --watch",
     "stop": "pm2 stop vue-back"
   },
   "keywords": [],
