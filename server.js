@@ -12,8 +12,8 @@ const users = [{
     name: 'robin'
 }];
 
-app.use(function(req,res,next){
-    res.setHeader('Content-Type','text/plain;charset=utf-8');
+app.use(function (req, res, next) {
+    res.setHeader('Content-Type', 'text/plain;charset=utf-8');
     // CORS 解决跨域问题
     res.setHeader('Access-Control-Allow-Origin', "*");
     res.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
@@ -21,7 +21,7 @@ app.use(function(req,res,next){
     next();
 });
 
-router.get('/', (req, res) =>{
+router.get('/', (req, res) => {
     res.send('hello express');
 })
 
@@ -29,7 +29,7 @@ router.get('/api/users', (req, res) => {
     res.json(users);
 });
 
-router.get('*', function(req, res){
+router.get('*', function (req, res) {
     res.end("404 not found");
     // res.sendfile('./public/404.html');
 });
