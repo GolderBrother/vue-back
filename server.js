@@ -2,13 +2,13 @@ const express = require('express');
 const app = new express();
 const router = express.Router()
 const users = [{
-    id: '11',
+    id: '1',
     name: 'james'
 }, {
-    id: '22',
+    id: '2',
     name: 'jack'
 }, {
-    id: '33',
+    id: '3',
     name: 'robin'
 }];
 
