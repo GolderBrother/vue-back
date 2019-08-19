@@ -8,7 +8,7 @@ COPY . /app
 WORKDIR /app
 # 运行命令
 RUN npm install
-# 向外暴露3001端口
-EXPOSE 3001
+# 向外暴露3000端口
+EXPOSE 3000
 # 基于镜像生成容器后，执行命令
 CMD npm start
