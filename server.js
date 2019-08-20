@@ -39,3 +39,7 @@ app.use('/', router);
 app.listen(3000, () => {
     console.log('Your app server is listening at on 3000 port');
 });
+
+
+// note!!!
+// vue–back，必须以node来启动，不能以pm2来启动，因为容器里的只能前台运行，不能后台运行!!!
